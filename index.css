@@ -37,8 +37,8 @@ body {
 :root {
     --avatar-size-small: 40px;
     --avatar-size-big: 50px;
-    --content-margin-small: 0;
-    --content-margin-medium-minus: 0;
+    --content-margin-small: 5%;
+    --content-margin-medium-minus: 16%;
     --content-margin-medium: 20%;
     --content-margin-medium-plus: 26%;
     --content-margin-big: 32%;
