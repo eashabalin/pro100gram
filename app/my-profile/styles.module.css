@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.nav-bar>button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  justify-self: start;
+}
+
+.nav-bar>.profile__name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.profile__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile__counter>.value {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profile__counter>.label {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.profile__top>img {
+  border-radius: 50%;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2px;
+}
+
+.profile__name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.profile__description {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-settings {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #F3F3F3;
+  border-radius: 100px;
+  padding: 5px;
+  width: 160px;
+}

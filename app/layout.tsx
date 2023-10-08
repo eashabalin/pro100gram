@@ -18,13 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}
-      <footer>
-        <button><Image src="/footer/home_icon.svg" width={24} height={22} alt=""/></button>
-        <button><Image src="/footer/search_icon.svg" width={24} height={22} alt=""/></button>
-        <button><Image src="/footer/take_photo_icon.svg" width={24} height={22} alt=""/></button>
-        <button><Image src="/footer/top_icon.svg" width={24} height={22} alt=""/></button>
-        <button><Image src="/footer/profile_icon.svg" width={24} height={22} alt=""/></button>
-      </footer>
+        <footer>
+          <button><Image src="/footer/home_icon.svg" width={24} height={22} alt=""/></button>
+          <button><Image src="/footer/search_icon.svg" width={24} height={22} alt=""/></button>
+          <button><Image src="/footer/take_photo_icon.svg" width={24} height={22} alt=""/></button>
+          <button><Image src="/footer/top_icon.svg" width={24} height={22} alt=""/></button>
+          <button><Image src="/footer/profile_icon.svg" width={24} height={22} alt=""/></button>
+        </footer>
       </body>
     </html>
   )
