@@ -144,8 +144,7 @@
 
 .post_photo {
     margin: 8px 0 10px;
-    padding: 0;
-    height: auto;
+    aspect-ratio: 1;
 }
 
 .post {
