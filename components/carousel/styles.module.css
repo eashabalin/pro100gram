@@ -1,0 +1,22 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+   
+  .carousel_inner {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s;
+  }
+   
+  .carousel_item {
+    flex: 1;
+    text-align: center;
+  }
+   
+  .carousel_item img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
