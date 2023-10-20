@@ -1,10 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Image from 'next/image'
-import Link from 'next/link'
+import Navbar from "@/components/ui/navbar/navbar-component";
+import {roboto} from '@/fonts'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,14 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
-        <footer>
-          <Link href='/'><button><Image src="/footer/home_icon.svg" width={24} height={22} alt=""/></button></Link>
-          <button><Image src="/footer/search_icon.svg" width={24} height={22} alt=""/></button>
-          <button><Image src="/footer/take_photo_icon.svg" width={24} height={22} alt=""/></button>
-          <button><Image src="/footer/top_icon.svg" width={24} height={22} alt=""/></button>
-          <Link href='/my-profile'><button><Image src="/footer/profile_icon.svg" width={24} height={22} alt=""/></button></Link>
-        </footer>
+      <body className={roboto.variable}>{children}
+      <Navbar></Navbar>
       </body>
     </html>
   )
