@@ -1,0 +1,20 @@
+.goback {
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+.goback .backButton {
+  justify-self: start;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.goback .text {
+  justify-self: start;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=goback.module.css.map */
