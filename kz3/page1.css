@@ -1,0 +1,23 @@
+.card {
+    border: none;
+}
+
+.card img {
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 26px;
+}
+
+.card-text {
+    margin-top: 8px;
+}
+
+.photos {
+    margin: 36px 0;
+}

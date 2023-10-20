@@ -1,0 +1,33 @@
+.avatar {
+  object-fit: cover;
+  width: 200px;
+  aspect-ratio: 1;
+  grid-area: avatar;
+  border-radius: 100px;
+  align-self: center;
+}
+
+.author_info {
+  margin: 36px 0;
+  display: grid;
+  grid-template-areas: 
+                    'avatar author_name'
+                    'avatar author_description';
+  gap: 16px;
+}
+
+.author_name {
+  grid-area: author_name;
+  font-size: 22px;
+  font-weight: bold;
+  align-self: self-end;
+}
+
+.author_description {
+  grid-area: author_description;
+  align-self: self-start;
+}
+
+.favs {
+  margin: 36px 0;
+}
