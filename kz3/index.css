@@ -43,9 +43,11 @@
 
 .content-block {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+                        'text photo'
+                        'button photo';
     gap: 16px;
-    margin-bottom: 36px;
+    margin: 36px 0;
     
 }
 
@@ -53,10 +55,17 @@
     width: 500px;
     object-fit: cover;
     height: 500px;
+    grid-area: photo;
 }
 
 .content-block-text {
-    align-self: center;
+    align-self: self-end;
+    grid-area: text;
+}
+
+.content-block-button {
+    grid-area: button;
+    align-self: self-start;
 }
 
 .footer {
@@ -89,4 +98,72 @@ body {
   
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+.button {
+    background-color: #007CBE;
+    color: white;
+    width: 180px;
+    height: 40px;
+    padding: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+.button:hover {
+    background-color: #00659c;
+    color: white;
+    width: 180px;
+    height: 40px;
+    padding: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 1000px;
+    }
+
+    .content-block {
+        display: grid;
+        grid-template-areas:
+                            'photo'
+                            'text'
+                            'button';
+        gap: 16px;
+        margin: 36px 0;
+    }
+
+    .content-block-photo {
+        width: 400px;
+        object-fit: cover;
+        height: 400px;
+        grid-area: photo;
+        justify-self: center;
+    }
+    
+    .phone {
+        width: 220px;
+        grid-row: 1/3;
+        align-self: center;
+        justify-self: end;
+    }    
+
+    .footer-content {
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+
+    .logo {
+        height: 30px;
+        margin-right: 16px;
+    }
 }

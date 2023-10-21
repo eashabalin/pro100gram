@@ -1,0 +1,19 @@
+.details-photo {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+@media (max-width: 1000px) {
+    .details-photo {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        aspect-ratio: 1;
+    }
+
+    .details-photo {
+        justify-self: center;
+    }
+}

@@ -1,0 +1,41 @@
+.content-block-right {
+    display: grid;
+    grid-template-areas:
+                        'text photo';
+    gap: 16px;
+    margin: 36px 0;
+    
+}
+
+.content-block-left {
+    display: grid;
+    grid-template-areas:
+                        'photo text';
+    gap: 16px;
+    margin: 36px 0;   
+}
+
+.content-block-text-1 {
+    align-self: center;
+}
+
+@media (max-width: 1000px) {
+    .content-block-right {
+        display: grid;
+        grid-template-areas:
+                            'photo'
+                            'text';
+        gap: 16px;
+        margin: 36px 0;
+        
+    }
+    
+    .content-block-left {
+        display: grid;
+        grid-template-areas:
+                            'photo'
+                            'text';
+        gap: 16px;
+        margin: 36px 0;   
+    }
+}

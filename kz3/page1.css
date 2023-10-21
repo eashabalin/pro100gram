@@ -21,3 +21,21 @@
 .photos {
     margin: 36px 0;
 }
+
+@media (max-width: 1000px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 26px;
+    }
+}
+
+@media (max-width: 700px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 16px;
+        row-gap: 26px;
+    }
+}

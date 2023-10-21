@@ -8,6 +8,7 @@
 
 .answer {
     display: none;
+    width: 1000px;
 }
 
 .questions {
@@ -15,4 +16,34 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+@media (max-width: 1000px) {
+    .question {
+        border: 1px solid gray;
+        padding: 5px 22px;
+        width: 700px;
+        border-radius: 5px;
+        background-color: rgb(248, 248, 248);
+    }
+
+    .answer {
+        display: none;
+        width: 700px;
+    }
+}
+
+@media (max-width: 700px) {
+    .question {
+        border: 1px solid gray;
+        padding: 5px 22px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: rgb(248, 248, 248);
+    }
+    
+    .answer {
+        display: none;
+        width: 300px;
+    }
 }
