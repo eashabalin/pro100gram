@@ -13,7 +13,7 @@ export default function Home() {
           username={'ldt.1'} 
           subtitle={'5 часов назад'} 
           imgsrcs={['/photo1.JPG', '/photo2.JPG']} 
-          user_avatar_src={'/avatar1.JPG'} 
+          userAvatarSrc={'/avatar1.JPG'} 
           description={'Круто покушал стейк, было очень вкусно) Жаль, без ботинка :( Приглашаю всех на ужин! '} 
           likesNumber={88} 
           commentsNumber={2}
@@ -23,7 +23,7 @@ export default function Home() {
           username={'ghostfantik'} 
           subtitle={'19 часов назад'} 
           imgsrcs={['/photo2.JPG']} 
-          user_avatar_src={'/avatar2.jpeg'} 
+          userAvatarSrc={'/avatar2.jpeg'} 
           description={'Осень наступает'} 
           likesNumber={78} 
           commentsNumber={3}
