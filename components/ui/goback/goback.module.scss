@@ -2,17 +2,26 @@
   padding: 14px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
+  justify-items: start;
+  align-items: center;
 
   .backButton {
-    justify-self: start;
+    display: flex;
     background: none;
     border: none;
     margin: 0;
     padding: 0;
+    justify-content: center;
+
+    .backImg {
+      align-self: center;
+    }
   }
 
+
   .text {
-    justify-self: start;
+    display: flex;
+    justify-content: center;
     font-family: var(--font-roboto);
     font-weight: 500;
     font-size: 20px;
