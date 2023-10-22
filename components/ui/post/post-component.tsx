@@ -11,7 +11,7 @@ export interface PostProps {
     username: string
     subtitle: string
     imgsrcs: string[]
-    user_avatar_src: string
+    userAvatarSrc: string
     description: string
     likesNumber: number
     commentsNumber: number
@@ -19,7 +19,7 @@ export interface PostProps {
 
 export default function Post({
     username,
-    user_avatar_src,
+    userAvatarSrc,
     subtitle,
     imgsrcs,
     description,
@@ -27,7 +27,7 @@ export default function Post({
     commentsNumber
 }: PostProps) {
     return <div className={styles.post}>
-        <UserLabel title={ username } subtitle={ subtitle } imgsrc={ user_avatar_src }/>
+        <UserLabel title={ username } subtitle={ subtitle } imgsrc={ userAvatarSrc }/>
         <div className={styles.post_photo}>
         <PostPhoto imgsrcs={ imgsrcs }/>
         </div>
