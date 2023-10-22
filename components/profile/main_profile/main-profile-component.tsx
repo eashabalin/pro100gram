@@ -8,11 +8,12 @@ interface Props {
     width: number
     height: number
 }
+
 export default function MainProfile({imageSrc, height, width}: Props) {
 
     return <div className={styles.container}>
-        <LabelCounter label="подписки" value={5000}></LabelCounter>
+        <div className={styles.left}><LabelCounter label="подписки" value={5000}/></div>
         <Image className={styles.photo} src={imageSrc} width={width} height={height} alt="фото профиля"></Image>
-        <LabelCounter label="подписчики" value={3257}></LabelCounter>
+        <div className={styles.right}><LabelCounter label="подписчики" value={3257}/></div>
     </div>
 }

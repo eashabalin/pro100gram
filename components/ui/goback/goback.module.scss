@@ -1,29 +1,22 @@
 .goback {
   padding: 14px;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  justify-items: start;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
   align-items: center;
 
   .backButton {
-    display: flex;
+    justify-self: start;
     background: none;
     border: none;
     margin: 0;
     padding: 0;
-    justify-content: center;
-
-    .backImg {
-      align-self: center;
-    }
   }
 
 
   .text {
-    display: flex;
-    justify-content: center;
     font-family: var(--font-roboto);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
   }
 }

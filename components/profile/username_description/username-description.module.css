@@ -1,0 +1,15 @@
+.content {
+  margin: 9px 14px 0 14px;
+  margin-bottom: 16px;
+}
+.content .username {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.content .description {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=username-description.module.css.map */

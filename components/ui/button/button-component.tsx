@@ -1,12 +1,14 @@
 import styles from "@/components/ui/button/button.module.scss";
+import {FC} from "react";
 
 
-export interface ButtonProps {
+interface IProps {
     label: string
+    className?: string
 }
 
-export default function Button({
-    label,
-}: ButtonProps) {
-    return <button className={styles.button}>{label}</button>
+const ButtonComponent: FC<IProps> = ({label, className}) => {
+    return <button className={`${styles.button} ${className}`}>{label}</button>
 }
+
+export default ButtonComponent
