@@ -5,6 +5,7 @@ import styles from './styles.module.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import UserLabel from '@/components/ui/userlabel/userlabel-component';
+import PostPhoto from '@/components/ui/post_photo/post_photo-component';
 
 export default function Home() {
   return (
@@ -12,24 +13,7 @@ export default function Home() {
     <div className={styles.post}>
         <UserLabel title={'ldt.1'} subtitle={'5 часов назад'} imgsrc={'/avatar1.JPG'}/>
         <div className={styles.post_photo}>
-        <Carousel showStatus={false} showThumbs={false}>
-          <Image
-              alt='photo'
-              src="/photo1.JPG"
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: '100%', height: '100%', aspectRatio: 1, objectFit: 'cover' }} // optional
-            />
-          <Image
-                alt='photo'
-                src="/photo2.JPG"
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{ width: '100%', height: '100%', aspectRatio: 1, objectFit: 'cover' }} // optional
-              />
-        </Carousel>
+          <PostPhoto imgsrcs={['/photo1.JPG', '/photo2.JPG']}/>
         </div>
         <div className={styles.post_actions}>
             <span className={styles.post_actions_basic}>
