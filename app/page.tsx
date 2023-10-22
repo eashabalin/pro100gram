@@ -3,21 +3,14 @@
 import Image from 'next/image'
 import styles from './styles.module.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import { Carousel } from 'react-responsive-carousel'; 
+import { Carousel } from 'react-responsive-carousel';
+import UserLabel from '@/components/ui/userlabel/userlabel-component';
 
 export default function Home() {
   return (
     <div className={styles.content}>
     <div className={styles.post}>
-        <div className={styles.post_user}>
-            <span className={styles.post_user_avatar}>
-                <Image src="/avatar1.JPG" width={35} height={35} alt="avatar"/>
-            </span>
-            <div className={styles.post_user_text}>
-                <div className={styles.post_user_text_name}>ldt.1</div>
-                <div className={styles.post_user_text_date}>5 часов назад</div>
-            </div>
-        </div>
+        <UserLabel title={'ldt.1'} subtitle={'5 часов назад'} imgsrc={'/avatar1.JPG'}/>
         <div className={styles.post_photo}>
         <Carousel showStatus={false} showThumbs={false}>
           <Image
