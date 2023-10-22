@@ -1,0 +1,28 @@
+.post_photo {
+  margin: 8px 0 10px;
+}
+
+.post_actions {
+  align-items: center;
+  display: flex;
+  padding: 0 16px;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.post_actions_basic {
+  display: flex;
+  gap: 10px;
+}
+
+.post_actions_other {
+  display: flex;
+  gap: 10px;
+}
+
+.post_text {
+  margin: 10px 16px 0 16px;
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=post.module.css.map */

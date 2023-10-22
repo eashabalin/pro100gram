@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0 14px;
+}
+.container .value {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.container .label {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=label_counter.module.css.map */
