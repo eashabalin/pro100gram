@@ -9,7 +9,7 @@
   height: 27px;
   margin-bottom: 16px;
 }
-.container .action_button button {
+.container .action_button a {
   width: 158px;
   font-weight: 700;
 }

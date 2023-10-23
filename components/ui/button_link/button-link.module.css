@@ -1,0 +1,19 @@
+.button {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  border: none;
+  background-color: #64990D;
+  color: white;
+  border-radius: 100px;
+  font-weight: 600;
+  width: 100%;
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #5d900b;
+}
+
+/*# sourceMappingURL=button-link.module.css.map */

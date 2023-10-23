@@ -1,9 +1,11 @@
+"use client"
 import GoBack from "@/components/ui/goback/goback-component";
 import MainProfile from "@/components/profile/main_profile/main-profile-component";
-import styles from "@/app/my_profile/my-profile.module.scss"
+import styles from "@/app/profile/my-profile.module.scss"
 import UsernameDescriptionComponent from "@/components/profile/username_description/username-description-component";
 import ButtonComponent from "@/components/ui/button/button-component";
 import GalleryComponent from "@/components/profile/gallery/gallery-component";
+import ButtonLinkComponent from "@/components/ui/button_link/button-link-component";
 
 export default function MyProfile() {
 
@@ -23,7 +25,9 @@ export default function MyProfile() {
         <GoBack>ghostfantik</GoBack>
         <MainProfile imageSrc="/my_profile/main_photo.png" width={82} height={82}></MainProfile>
         <UsernameDescriptionComponent username={"Egor Drushchenko"} description={"VK Middle"} />
-        <div className={styles.action_button}><ButtonComponent className={action.styles} label={action.label} /></div>
+        <div className={styles.action_button}>
+            <ButtonLinkComponent href={"/profile_settings"} label={action.label} />
+        </div>
         <GalleryComponent pictures={["/photo1.png", "/photo1.png", "/photo1.png", "/photo1.png"]}></GalleryComponent>
     </div>
 }
