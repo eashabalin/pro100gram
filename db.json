@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 0,
+      "authorUserName": "ghostfantik",
+      "authorAvatarSrc": "/avatar1.JPG",
+      "imgSrc": "/photo1.png",
+      "description": "Первая фотография!",
+      "likesCount": 100,
+      "commentsCount": 50
+    },
+    {
+      "id": 1,
+      "authorUserName": "ghostfantik",
+      "authorAvatarSrc": "/avatar1.JPG",
+      "imgSrc": "/photo2.png",
+      "description": "Первая фотография!",
+      "likesCount": 100,
+      "commentsCount": 50
+    }
+  ]
+}

@@ -1,4 +1,3 @@
-"use client"
 import GoBack from "@/components/ui/goback/goback-component";
 import MainProfile from "@/components/profile/main_profile/main-profile-component";
 import styles from "@/app/profile/my-profile.module.scss"
@@ -6,6 +5,7 @@ import UsernameDescriptionComponent from "@/components/profile/username_descript
 import ButtonComponent from "@/components/ui/button/button-component";
 import GalleryComponent from "@/components/profile/gallery/gallery-component";
 import ButtonLinkComponent from "@/components/ui/button_link/button-link-component";
+import {Posts} from "@/entities/post.entity";
 
 export default function MyProfile() {
 

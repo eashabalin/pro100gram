@@ -17,7 +17,7 @@ export interface PostProps {
     commentsNumber: number
 }
 
-export default function Post({
+export default function PostComponent({
     username,
     userAvatarSrc,
     subtitle,

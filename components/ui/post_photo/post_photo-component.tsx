@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "@/components/ui/userlabel/userlabel.module.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
