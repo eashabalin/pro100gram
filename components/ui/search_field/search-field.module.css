@@ -1,0 +1,29 @@
+.searchField {
+  width: 100%;
+  display: flexbox;
+}
+.searchField .textField {
+  position: relative;
+  display: flex;
+}
+.searchField .inputField {
+  background-color: #F5F5F5;
+  border: none;
+  font-size: 13px;
+  height: 30px;
+  border-radius: 4px;
+  width: 100%;
+  outline-color: #ececec;
+  padding-left: 30px;
+}
+.searchField .textField::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  background: url("../../../public/icons/magnifyingglass.svg") right/contain no-repeat;
+}
+
+/*# sourceMappingURL=search-field.module.css.map */

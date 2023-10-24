@@ -6,8 +6,11 @@ import ButtonComponent from "@/components/ui/button/button-component";
 import GalleryComponent from "@/components/profile/gallery/gallery-component";
 import ButtonLinkComponent from "@/components/ui/button_link/button-link-component";
 import {Posts} from "@/entities/post.entity";
+import {getUser} from "@/services/user/user.service";
+import globalConfig from "@/config";
+import {getUserPosts} from "@/services/post/post.service";
 
-export default function MyProfile() {
+export default async function MyProfile() {
 
     interface IAction {
         styles: string,
@@ -21,13 +24,17 @@ export default function MyProfile() {
     }
     const action: IAction = actionsButton.settings
 
+    const user = await getUser(globalConfig.currentUsername)
+    const posts = await getUserPosts(globalConfig.currentUsername)
     return <div className={styles.container}>
-        <GoBack>ghostfantik</GoBack>
-        <MainProfile imageSrc="/my_profile/main_photo.png" width={82} height={82}></MainProfile>
-        <UsernameDescriptionComponent username={"Egor Drushchenko"} description={"VK Middle"} />
+        <GoBack>{user.username}</GoBack>
+        <MainProfile imageSrc={user.avatarSrc} width={82} height={82}
+                     subscriptionsCount={user.subscriptionsCount}
+                     subscribersCount={user.subscribersCount}></MainProfile>
+        <UsernameDescriptionComponent username={user.fullName} description={user.bio} />
         <div className={styles.action_button}>
             <ButtonLinkComponent href={"/profile_settings"} label={action.label} />
         </div>
-        <GalleryComponent pictures={["/photo1.png", "/photo1.png", "/photo1.png", "/photo1.png"]}></GalleryComponent>
+        <GalleryComponent pictures={posts.map((post) => post.imgSrc)}></GalleryComponent>
     </div>
 }

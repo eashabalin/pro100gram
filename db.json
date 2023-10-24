@@ -1,4 +1,22 @@
 {
+  "users": [
+    {
+      "username": "ghostfantik",
+      "fullName": "Egor Drushchenko",
+      "bio": "VK Middle",
+      "subscriptionsCount": 1568,
+      "subscribersCount": 100,
+      "avatarSrc": "/avatar2.jpeg"
+    },
+    {
+      "username": "eshabalin",
+      "fullName": "Egor Shabalin",
+      "bio": "Ведущий Devops специалист",
+      "subscriptionsCount": 1568,
+      "subscribersCount": 100,
+      "avatarSrc": "/avatar1.JPG"
+    }
+  ],
   "posts": [
     {
       "id": 0,
@@ -12,8 +30,26 @@
     {
       "id": 1,
       "authorUserName": "ghostfantik",
+      "authorAvatarSrc": "/photo1.png",
+      "imgSrc": "/photo1.png",
+      "description": "Первая фотография!",
+      "likesCount": 100,
+      "commentsCount": 50
+    },
+    {
+      "id": 0,
+      "authorUserName": "eshabalin",
       "authorAvatarSrc": "/avatar1.JPG",
-      "imgSrc": "/photo2.png",
+      "imgSrc": "/photo2.JPG",
+      "description": "Первая фотография!",
+      "likesCount": 100,
+      "commentsCount": 50
+    },
+    {
+      "id": 1,
+      "authorUserName": "eshabalin",
+      "authorAvatarSrc": "/avatar1.JPG",
+      "imgSrc": "/photo2.JPG",
       "description": "Первая фотография!",
       "likesCount": 100,
       "commentsCount": 50

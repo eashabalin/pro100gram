@@ -3,17 +3,19 @@ import Image from 'next/image'
 import React from "react";
 import LabelCounter from "@/components/ui/label_counter/label-counter-component";
 
-interface Props {
+type Props = {
     imageSrc: string
     width: number
     height: number
+    subscribersCount: number
+    subscriptionsCount: number
 }
 
-export default function MainProfile({imageSrc, height, width}: Props) {
+export default function MainProfile({imageSrc, height, width, subscriptionsCount, subscribersCount}: Props) {
 
     return <div className={styles.container}>
-        <div className={styles.left}><LabelCounter label="подписки" value={5000}/></div>
+        <div className={styles.left}><LabelCounter label="подписки" value={subscriptionsCount}/></div>
         <Image className={styles.photo} src={imageSrc} width={width} height={height} alt="фото профиля"></Image>
-        <div className={styles.right}><LabelCounter label="подписчики" value={3257}/></div>
+        <div className={styles.right}><LabelCounter label="подписчики" value={subscribersCount}/></div>
     </div>
 }
