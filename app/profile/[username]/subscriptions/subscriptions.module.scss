@@ -1,0 +1,30 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .search {
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 20px;
+  }
+
+  .list {
+    padding-left: 14px;
+    padding-right: 14px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    gap: 6px;
+      .left {
+        grid-column: 1/2;
+        justify-self: start;
+        align-self: center;
+      }
+
+      .right {
+        grid-column: 2/3;
+        justify-self: center;
+        align-self: center;
+      }
+
+  }
+}

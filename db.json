@@ -6,7 +6,41 @@
       "bio": "VK Middle",
       "subscriptionsCount": 1568,
       "subscribersCount": 100,
-      "avatarSrc": "/avatar2.jpeg"
+      "avatarSrc": "/avatar2.jpeg",
+      "subscribers": [
+        {
+          "username": "eshabalin",
+          "avatarSrc": "/avatar1.JPG",
+          "fullName": "Egor Shabalin"
+        },
+        {
+          "username": "eshabalin2",
+          "avatarSrc": "/avatar1.JPG",
+          "fullName": "Egor Shabalin"
+        },
+        {
+          "username": "eshabalin3",
+          "avatarSrc": "/avatar1.JPG",
+          "fullName": "Egor Shabalin"
+        }
+      ],
+      "subscriptions": [
+        {
+          "username": "eshabalin",
+          "avatarSrc": "/avatar1.JPG",
+          "fullName": "Egor Shabalin"
+        },
+        {
+          "username": "eshabalin2",
+          "avatarSrc": "/avatar1.JPG",
+          "fullName": "Egor Shabalin"
+        },
+        {
+          "username": "eshabalin3",
+          "avatarSrc": "/avatar1.JPG",
+          "fullName": "Egor Shabalin"
+        }
+      ]
     },
     {
       "username": "eshabalin",
@@ -14,7 +48,41 @@
       "bio": "Ведущий Devops специалист",
       "subscriptionsCount": 1568,
       "subscribersCount": 100,
-      "avatarSrc": "/avatar1.JPG"
+      "avatarSrc": "/avatar1.JPG",
+      "subscribers": [
+        {
+          "username": "ghostfantik",
+          "avatarSrc": "/avatar2.jpeg",
+          "fullName": "Egor Shabalin"
+        },
+        {
+          "username": "ghostfantik2",
+          "avatarSrc": "/avatar2.jpeg",
+          "fullName": "Egor Shabalin"
+        },
+        {
+          "username": "ghostfantik3",
+          "avatarSrc": "/avatar2.jpeg",
+          "fullName": "Egor Shabalin"
+        }
+      ],
+      "subscriptions": [
+        {
+          "username": "ghostfantik",
+          "avatarSrc": "/avatar2.jpeg",
+          "fullName": "Egor Shabalin"
+        },
+        {
+          "username": "ghostfantik2",
+          "avatarSrc": "/avatar2.jpeg",
+          "fullName": "Egor Shabalin"
+        },
+        {
+          "username": "ghostfantik3",
+          "avatarSrc": "/avatar2.jpeg",
+          "fullName": "Egor Shabalin"
+        }
+      ]
     }
   ],
   "posts": [

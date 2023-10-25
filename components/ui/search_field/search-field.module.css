@@ -1,7 +1,3 @@
-.searchField {
-  width: 100%;
-  display: flexbox;
-}
 .searchField .textField {
   position: relative;
   display: flex;

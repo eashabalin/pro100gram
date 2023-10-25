@@ -3,7 +3,7 @@ import styles from "@/components/ui/search_field/search-field.module.scss";
 export interface SearchFieldProps {
 }
 
-export default function SearchField({
+export default function SearchFieldComponent({
 }: SearchFieldProps) {
     return <div className={styles.searchField}>
         <div className={styles.textField}>

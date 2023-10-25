@@ -21,5 +21,9 @@
   color: rgb(168, 168, 168);
   line-height: 17px;
 }
+.user_label a:focus {
+  outline: none;
+  background-color: red;
+}
 
 /*# sourceMappingURL=userlabel.module.css.map */

@@ -5,5 +5,9 @@ export type UserEntity = {
     subscriptionsCount: number
     subscribersCount: number
     avatarSrc: string
+    subscribers: SubUserEntity[]
+    subscriptions: SubUserEntity[]
 }
+
+export type SubUserEntity = Pick<UserEntity, "username" | "fullName" | "avatarSrc">
 

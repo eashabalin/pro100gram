@@ -1,0 +1,28 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.content .search {
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-bottom: 20px;
+}
+.content .list {
+  padding-left: 14px;
+  padding-right: 14px;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  gap: 6px;
+}
+.content .list .left {
+  grid-column: 1/2;
+  justify-self: start;
+  align-self: center;
+}
+.content .list .right {
+  grid-column: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+
+/*# sourceMappingURL=subscriptions.module.css.map */

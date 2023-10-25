@@ -6,6 +6,7 @@ import Like from "../post_actions/like/like-component";
 import Comment from "../post_actions/comment/comment-component";
 import Respect from "../post_actions/respect/respect-component";
 import Disrespect from "../post_actions/disrespect/disrespect-component";
+import Link from "next/link";
 
 export interface PostProps {
     username: string
@@ -27,7 +28,9 @@ export default function PostComponent({
     commentsNumber
 }: PostProps) {
     return <div className={styles.post}>
-        <UserLabel title={ username } subtitle={ subtitle } imgsrc={ userAvatarSrc }/>
+        <div className={styles.user_label}>
+                <UserLabel title={ username } subtitle={ subtitle } imgsrc={ userAvatarSrc }/>
+            </div>
         <div className={styles.post_photo}>
         <PostPhoto imgsrcs={ imgsrcs }/>
         </div>

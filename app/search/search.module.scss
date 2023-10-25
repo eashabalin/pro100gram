@@ -1,0 +1,46 @@
+.content {
+  display: flex;
+  flex-direction: column;
+
+  .search {
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 20px;
+  }
+
+  .list {
+    padding-left: 14px;
+    padding-right: 14px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    gap: 6px;
+
+    .listLabel {
+      grid-column: 1/3;
+      font-weight: 400;
+      font-size: 13px;
+      color: #A8A8A8;
+      margin-left: 10px;
+    }
+    hr {
+      grid-column: 1/3;
+      border: 1px solid #F5F5F5;
+    }
+    .hr_end {
+      margin-bottom: 23px;
+    }
+
+    .left {
+      grid-column: 1/2;
+      justify-self: start;
+      align-self: center;
+    }
+
+    .right {
+      grid-column: 2/3;
+      justify-self: center;
+      align-self: center;
+    }
+
+  }
+}

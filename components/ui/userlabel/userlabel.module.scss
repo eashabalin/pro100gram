@@ -26,5 +26,9 @@
 
     }
 
+    a:focus {
+        outline: none;
+        background-color: red;
+    }
     
 }

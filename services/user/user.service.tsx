@@ -1,4 +1,4 @@
-import {UserEntity} from "@/entities/user.entity";
+import {SubUserEntity, UserEntity} from "@/entities/user.entity";
 import globalConfig from "@/config";
 import {URLSearchParams} from "next/dist/compiled/@edge-runtime/primitives";
 
@@ -15,7 +15,7 @@ const getUser = async (username: string): Promise<UserEntity> => {
     if (users.length > 0) {
         return users[0]
     }
-    throw new Error("user not found")
+    throw new Error(`user with username: ${username} not found`)
 }
 
 export {getUser}
