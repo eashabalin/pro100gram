@@ -12,7 +12,7 @@ export default function Home() {
     <div className={styles.content}>
       <GoBack>Вход</GoBack>
       <div className={styles.loginForm}>
-        <TextField placeholder="Имя пользователя, телефон или эл. адрес"/>
+        <TextField placeholder="Имя пользователя, телефон или эл. адрес" />
         <PasswordField placeholder="Пароль"/>
         <a href="" className={styles.forgotPassword}>Забыли пароль?</a>
         <div className={styles.btn}>

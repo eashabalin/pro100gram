@@ -3,7 +3,7 @@ import styles from "@/components/ui/text_field/text_field.module.scss";
 
 export interface TextFieldProps {
     placeholder: string
-    type: string
+    type?: string
 }
 
 export default function TextField({
